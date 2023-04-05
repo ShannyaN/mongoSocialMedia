@@ -1,0 +1,4 @@
+const userSeeds = [
+    {username: 'shannyaN',
+    }
+]
