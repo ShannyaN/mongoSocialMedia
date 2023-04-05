@@ -4,8 +4,10 @@ const userSeeds = [
     },
 ]
 
-const reactionSeeds = [
-    {reactionBody: 'The Last of Us is amazing',
+const thoughtSeeds = [
+    {thougthText: 'The Last of Us is amazing',
     username: 'shannyaN',
     },
 ]
+
+module.exports = {userSeeds, reactionSeeds}
