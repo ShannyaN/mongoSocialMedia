@@ -10,4 +10,4 @@ const thoughtSeeds = [
     },
 ]
 
-module.exports = {userSeeds, reactionSeeds}
+module.exports = {userSeeds, thoughtSeeds}

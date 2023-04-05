@@ -1,5 +1,5 @@
 const {Schema, model } = require('mongoose');
-import { isEmail } from 'validator';
+const { isEmail } =require('validator');
 
 const userSchema = new Schema(
     {
@@ -14,7 +14,7 @@ const userSchema = new Schema(
             trim: true,
         },
         email: {
-            type: mongoose.SchemaTypes.Email ,
+            type: String ,
             null: false, 
             unique: true,
             validate: [isEmail, 'invalid email']
@@ -46,5 +46,9 @@ userSchema.virtual('friendCount').get(function() {
 //build model
 const User = model('user', userSchema)
 
+User.create(
+    { username: 'ShannyaN', email: 'shannya658@gmail.com' },
+  );
+  
 //export so it can be used
 module.exports = User;
